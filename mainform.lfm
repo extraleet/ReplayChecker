@@ -1,0 +1,115 @@
+object FormMain: TFormMain
+  Left = 368
+  Height = 534
+  Top = 340
+  Width = 1247
+  Caption = 'Steam Replay Ban Checker by extraleet'
+  ClientHeight = 534
+  ClientWidth = 1247
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object EditPath: TEdit
+    Left = 24
+    Height = 23
+    Top = 8
+    Width = 720
+    TabOrder = 0
+    Text = 'C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\replays'
+  end
+  object StringGrid: TStringGrid
+    Left = 360
+    Height = 440
+    Top = 72
+    Width = 872
+    ColCount = 9
+    RowCount = 1
+    ScrollBars = ssVertical
+    TabOrder = 1
+    OnMouseDown = StringGridMouseDown
+    OnMouseUp = StringGridMouseUp
+    ColWidths = (
+      29
+      125
+      52
+      38
+      59
+      38
+      119
+      306
+      83
+    )
+  end
+  object ProgressBar: TProgressBar
+    Left = 520
+    Height = 20
+    Top = 40
+    Width = 472
+    TabOrder = 2
+  end
+  object ListBox: TListBox
+    Left = 16
+    Height = 440
+    Top = 72
+    Width = 328
+    ItemHeight = 0
+    TabOrder = 3
+  end
+  object ButtonList: TButton
+    Left = 24
+    Height = 25
+    Top = 40
+    Width = 136
+    Caption = 'list demos and players'
+    OnClick = ButtonListClick
+    TabOrder = 4
+  end
+  object ButtonCheckAndSort: TButton
+    Left = 376
+    Height = 25
+    Top = 40
+    Width = 123
+    Caption = 'check and sort'
+    Enabled = False
+    OnClick = ButtonCheckAndSortClick
+    TabOrder = 5
+  end
+  object ButtonDir: TButton
+    Left = 760
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'change dir'
+    OnClick = ButtonDirClick
+    TabOrder = 6
+  end
+  object ButtonApiKey: TButton
+    Left = 1120
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'set ApiKey'
+    OnClick = ButtonApiKeyClick
+    TabOrder = 7
+  end
+  object LabelProgress: TLabel
+    Left = 208
+    Height = 15
+    Top = 45
+    Width = 17
+    Caption = '0/0'
+    ParentColor = False
+  end
+  object LabelProgressPlayer: TLabel
+    Left = 1064
+    Height = 15
+    Top = 45
+    Width = 17
+    Caption = '0/0'
+    ParentColor = False
+  end
+  object SelectDirectoryDialog: TSelectDirectoryDialog
+    left = 1120
+    top = 440
+  end
+end
