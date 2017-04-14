@@ -8,6 +8,12 @@ you need an api key from steam https://steamcommunity.com/dev/apikey (doesn't wo
 you can click on the steam id and you browser goes to his steam page
 steam names are currently disable because it takes a while to get all steam names
 
+how to use:
+1. select the folder
+2. set api key
+3. "list demos and players"
+4. "check and sort"
+
 thats all 
 enjoy the tool
 
