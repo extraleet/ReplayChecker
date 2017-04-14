@@ -5,8 +5,7 @@ written in pascal/lazarus https://www.lazarus-ide.org/
 
 you need to download the replay after each game
 you need an api key from steam https://steamcommunity.com/dev/apikey (doesn't work with limited accounts)
-you can click on the steam id and you browser goes to his steam page
-steam names are currently disable because it takes a while to get all steam names
+you can click on the steam id and your browser goes to his steam page
 
 how to use:
 1. select the folder
