@@ -21,8 +21,8 @@
         <UnitName Value="MainForm"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="470"/>
-        <CursorPos X="51" Y="484"/>
+        <TopLine Value="372"/>
+        <CursorPos Y="386"/>
         <UsageCount Value="25"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -56,7 +56,7 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit5>
     </Units>
-    <JumpHistory Count="9" HistoryIndex="8">
+    <JumpHistory Count="11" HistoryIndex="10">
       <Position1>
         <Filename Value="mainform.pas"/>
         <Caret Line="387" Column="15" TopLine="223"/>
@@ -93,6 +93,14 @@
         <Filename Value="mainform.pas"/>
         <Caret Line="640" TopLine="623"/>
       </Position9>
+      <Position10>
+        <Filename Value="mainform.pas"/>
+        <Caret Line="484" Column="51" TopLine="470"/>
+      </Position10>
+      <Position11>
+        <Filename Value="mainform.pas"/>
+        <Caret Line="619" Column="25" TopLine="601"/>
+      </Position11>
     </JumpHistory>
   </ProjectSession>
   <Debugging>
