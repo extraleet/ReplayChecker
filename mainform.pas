@@ -82,10 +82,10 @@ var
   replayfolder:TStringList;
 begin
   MainDirectory:=getcurrentdir;
-  if FileExists(MainDirectory+'replayfolder.txt') then
+  if FileExists(MainDirectory+'\replayfolder.txt') then
   begin
     replayfolder:=TStringList.Create;
-    replayfolder.LoadFromFile(MainDirectory+'replayfolder.txt');
+    replayfolder.LoadFromFile(MainDirectory+'\replayfolder.txt');
     EditPath.Text:=replayfolder[0];
     replayfolder.free;
   end;
@@ -383,19 +383,19 @@ begin
   ButtonCheckAndSort.Enabled:=False;
   currstep:=0;
   maxsteps:=length(Playerlist);
-  if FileExists(MainDirectory+'apikey.txt') then
+  if FileExists(MainDirectory+'\apikey.txt') then
   begin
     apifile:=TStringList.Create;
-    apifile.LoadFromFile(MainDirectory+'apikey.txt');
+    apifile.LoadFromFile(MainDirectory+'\apikey.txt');
     apikey:=apifile[0];
     apifile.free;
   end;
   if apikey = '' then
   begin
     showmessage('please add an api key');
+    ButtonCheckAndSort.Enabled:=True;
     exit;
   end;
-
   if maxsteps>0 then
   begin
     stepsize:=100/maxsteps;
@@ -448,10 +448,10 @@ procedure TFormMain.ButtonApiKeyClick(Sender: TObject);
 var
   apifile: TStringList;
 begin
-  if FileExists(MainDirectory+'apikey.txt') then
+  if FileExists(MainDirectory+'\apikey.txt') then
   begin
     apifile:=TStringList.Create;
-    apifile.LoadFromFile(MainDirectory+'apikey.txt');
+    apifile.LoadFromFile(MainDirectory+'\apikey.txt');
     apikey:=apifile[0];
     apifile.free;
   end;
@@ -478,7 +478,7 @@ begin
     EditPath.Text:=PathOut;
   replayfolder:=TStringList.Create;
   replayfolder.Add(EditPath.Text);
-  replayfolder.SaveToFile(MainDirectory+'replayfolder.txt');
+  replayfolder.SaveToFile(MainDirectory+'\replayfolder.txt');
   replayfolder.free;
 end;
 
@@ -647,7 +647,7 @@ var
 begin
   replayfolder:=TStringList.Create;
   replayfolder.Add(EditPath.Text);
-  replayfolder.SaveToFile(MainDirectory+'replayfolder.txt');
+  replayfolder.SaveToFile(MainDirectory+'\replayfolder.txt');
   replayfolder.free;
 end;
 

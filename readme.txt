@@ -19,7 +19,7 @@ enjoy the tool
 if you have questions/bugs/any kind of support, message me https://www.reddit.com/message/compose/?to=extraleet
 
 screenshot https://raw.githubusercontent.com/extraleet/ReplayChecker/master/preview.PNG
-virustotal https://www.virustotal.com/en/file/d739dff9d96f607253cd4ee4c8b2e8c5c32253f4efcc9ee65744f0dfa3f62444/analysis/1492201269/
+virustotal https://www.virustotal.com/en/file/646e2d7e6eb81d54be71476df5fb7f0e964bae27054ed3b69cb0f77c9b18920e/analysis/1492204336/
 
 regards
 extraleet
